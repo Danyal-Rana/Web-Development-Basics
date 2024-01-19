@@ -1,0 +1,26 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv {
+    background-color: black;
+    height: 60px;
+}
+
+.subDiv {
+    display: inline-block;
+    margin-right: 140px;
+    text-decoration: none;
+}
+
+button {
+    background-color: #ddac51;
+}
+
+#clr {
+    color: orange;
+    font-size: 25px;
+    margin-left: 20px;
+}

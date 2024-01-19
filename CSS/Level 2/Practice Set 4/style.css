@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv {
+    background-color: black;
+    height: 60px;
+}
+
+.subDiv {
+    display: inline-block;
+    margin-right: 140px;
+    text-decoration: none;
+}
+
+button {
+    background-color: #ddac51;
+}
+
+#clr {
+    color: orange;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.myDiv {
+    height: 450px;
+    width: 422.5px;
+    display: inline-block;
+    margin-top: 20;
+    margin-bottom: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#div1 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#div2 {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+#div3 {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+footer {
+    margin-top: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
