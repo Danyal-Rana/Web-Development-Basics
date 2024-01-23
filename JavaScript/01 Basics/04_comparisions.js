@@ -11,3 +11,5 @@ console.log (null < 0); // null is treated as 0
 
 console.log ("2" == 2); // here "2" is converted into number
 console.log ("2" === 2); // here "2" is treated as string
+
+// this is a comment
