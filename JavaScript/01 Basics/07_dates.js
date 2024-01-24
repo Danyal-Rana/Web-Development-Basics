@@ -9,5 +9,17 @@ console.log(myDate.toDateString());
 console.log(myDate.toJSON());
 console.log(myDate.getUTCFullYear());
 
+console.log();
 let myDOB = new Date (2002, 11, 31);
-console.log(\n + myDOB);
+console.log(myDOB.toDateString());
+
+console.log();
+let d1 = new Date (2002, 11, 31, 4, 30);
+console.log (d1.toLocaleString());
+
+console.log();
+let d2 = new Date ("12-31-2002");
+console.log (d2.toLocaleString());
+
+console.log ();
+console.log(Math.floor(Date.now()/100));
