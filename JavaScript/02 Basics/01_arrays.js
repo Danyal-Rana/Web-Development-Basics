@@ -1,2 +1,2 @@
-// array in javascript can store variables of different data type
+// Array in JavaScript can be resizable and can have variables of different data types
 
