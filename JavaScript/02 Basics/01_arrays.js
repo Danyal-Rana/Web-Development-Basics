@@ -19,3 +19,11 @@ myArr.shift();
 console.log (myArr);
 console.log();
 
+console.log (myArr.includes(4));
+console.log (myArr.indexOf(9));
+console.log();
+
+const myStr = myArr.join();
+console.log (myArr);
+console.log (myStr);
+console.log (typeof myStr);
