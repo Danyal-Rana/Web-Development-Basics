@@ -26,4 +26,17 @@ console.log();
 const myStr = myArr.join();
 console.log (myArr);
 console.log (myStr);
-console.log (typeof myStr);
+console.log (typeof myStr, "\n");
+
+// slice: does not manipulate the original array
+// splice: it manipulates the original array
+
+console.log ("Before slicing: ",myArr);
+const newArr = myArr.slice (1, 3); // index 3 is not included
+console.log ("New Array", newArr);
+console.log ("After slicing: ", myArr, "\n");
+
+console.log ("Before splicing: ", myArr);
+const newArr2 = myArr.splice (1, 3); // splice does include last index
+console.log ("New Array", newArr2);
+console.log ("After splicing: ", myArr);
