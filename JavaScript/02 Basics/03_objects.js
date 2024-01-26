@@ -32,8 +32,14 @@ console.log();
 JsUser.greeting = function () {
     console.log ("Hello JavaScript Function");
 }
+
+JsUser.greeting2 = function () {
+    console.log (`Hello, ${this.name}`);
+}
+
 console.log (JsUser.greeting); // only reference is returned
-console.log (JsUser.greeting());
+console.log (JsUser.greeting()); // another execution also occurs, which gives undefined, it will be discussed later
+console.log (JsUser.greeting2());
 console.log("\n");
 
 JsUser.name = "Dani";
