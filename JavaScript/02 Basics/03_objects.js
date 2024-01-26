@@ -19,9 +19,10 @@ const JsUser = { //each key is treated as string in javascript
 console.log(JsUser);
 console.log(JsUser.age); // not the official way
 console.log(JsUser["name"]); // recommended
+console.log();
 
 console.log (JsUser["mySym"]); // wrong way
-console.log (typeof JsUser["mySym"], "\n"); 
+console.log (typeof JsUser["mySym"]); 
 console.log (JsUser[mySym2]); // right way
 console.log (typeof JsUser[mySym2]);
 console.log();
@@ -29,10 +30,11 @@ console.log();
 // functions/methods in javascript are treated as Variables
 
 JsUser.greeting = function () {
-    console.log ("Hello JavaScript Function \n");
+    console.log ("Hello JavaScript Function");
 }
-
-
+console.log (JsUser.greeting); // only reference is returned
+console.log (JsUser.greeting());
+console.log("\n");
 
 JsUser.name = "Dani";
 console.log (JsUser);
