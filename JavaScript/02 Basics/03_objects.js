@@ -1,6 +1,6 @@
 // 2 types of object
 
-// #1 
+// #1 Singleton, object.create //will be discussed later
 
 // #2 object literals, discussed here
 
