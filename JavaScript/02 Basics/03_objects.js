@@ -24,3 +24,13 @@ console.log (JsUser["mySym"]); // wrong way
 console.log (typeof JsUser["mySym"], "\n"); 
 console.log (JsUser[mySym2]); // right way
 console.log (typeof JsUser[mySym2]);
+console.log();
+
+JsUser.name = "Dani";
+console.log (JsUser);
+
+Object.freeze (JsUser); // now, the contents of object will not change
+console.log();
+JsUser.name = "Dany";
+console.log (JsUser);
+console.log();
