@@ -26,6 +26,14 @@ console.log (JsUser[mySym2]); // right way
 console.log (typeof JsUser[mySym2]);
 console.log();
 
+// functions/methods in javascript are treated as Variables
+
+JsUser.greeting = function () {
+    console.log ("Hello JavaScript Function \n");
+}
+
+
+
 JsUser.name = "Dani";
 console.log (JsUser);
 
@@ -34,6 +42,4 @@ console.log();
 JsUser.name = "Dany";
 console.log (JsUser);
 console.log();
-
-// functions/methods in javascript are treated as Variables
 
