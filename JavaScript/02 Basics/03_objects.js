@@ -34,3 +34,6 @@ console.log();
 JsUser.name = "Dany";
 console.log (JsUser);
 console.log();
+
+// functions/methods in javascript are treated as Variables
+
