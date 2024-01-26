@@ -23,4 +23,4 @@ console.log(JsUser["name"]); // recommended
 console.log (JsUser["mySym"]); // wrong way
 console.log (typeof JsUser["mySym"], "\n"); 
 console.log (JsUser[mySym2]); // right way
-console.log (typeof JsUser["mySym2"]);
+console.log (typeof JsUser[mySym2]);
