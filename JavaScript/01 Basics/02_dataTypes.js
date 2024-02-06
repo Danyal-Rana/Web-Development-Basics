@@ -1,6 +1,6 @@
 "use strict" // now all code will treated according to the newer version of javascript
 
-// alert (3+5) #this will not work in nodejs, it will work in browser's software
+// alert (3+5) #this will not work in nodejs, it will work in browser's software/compiler
 
 // number => 2^53
 // string => "" or ''
