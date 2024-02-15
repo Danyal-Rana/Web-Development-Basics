@@ -1,7 +1,6 @@
-// these loops are arry specific loops
+// for-of loop is arry/map specific loops
+// for-of loop give values
 
-
-// for of
 let arr = [1, 2, 3, 4, 5];
 for (const i of arr) {
     console.log (i);
