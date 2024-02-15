@@ -1,0 +1,30 @@
+JavaScript Execution Context
+
+
+*** Code ***
+let n1 = 10;
+let n2 = 20;
+
+function addNum (num1, num2) {
+    let result = num1+num2;
+    return result;
+}
+
+let result1 = addNum (n1, n2);
+let result2 = addNum (5, 10);
+
+
+***Code***
+1. Global EC / Global Enviroment (assigned to 'this' keyword)
+
+2. Function/Functional EC (call stack) 
+
+3. Eval EC (in mongo etc)
+
+
+*** JavaScript executes the code in 2 steps/phasae.***
+
+1. (Memory) Creation phase (only memory is allocated) --> first "undefined" will be assigned to n1, n2, , result1, result2. only function function definition is assigned to "addNum"
+
+2. Execution Phase --> 10 and 20 will be assigned to n1 and n2 respectively. for "addNum" function at line 13 when it is called, a "new execution Enviroment and Execution thread" will be created. So, memory phase and execution phase for the function "addNum" will be created. When the job of function is done, its "Execution Enviroment & Execution thread / memory phase & execution phase" will be deleted.
+function calling follows LIFO.
