@@ -2,6 +2,8 @@
 // if we don't use scope operator than we have to use "return keyword"
 // for-each modifies the original array
 
+// returns a subset of the original array based on custom criteria. In your callback function, return a boolean value to determine whether or not each item will be included in the new array.
+
 
 const myArr = [1, 2,3, 4, 5, 6, 7, 8, 9, 10];
 
