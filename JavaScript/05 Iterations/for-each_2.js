@@ -1,5 +1,6 @@
 // for-each loop is specially used when we have Array of Objects
 // remember objects are not iterable, only Arrays are iterable
+// for-each does not return anything.
 
 const myObjArr = [
     {
