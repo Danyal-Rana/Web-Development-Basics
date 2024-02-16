@@ -1,6 +1,6 @@
 // for-in loop is used to iterate through objects
 // for-in loop gives the keys, we have to extract the values
-// it can't be used for maps as maps are not iteratable
+// it can't be used for maps as, maps are not iteratable
 
 const myLang = {
     py: "Python",
