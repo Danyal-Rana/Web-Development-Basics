@@ -8,4 +8,23 @@
 <body style="background-color: #212121; color: #fff;">
     
 </body>
+
+<script>
+    const myDiv = document.createElement("div");
+    console.log (myDiv);
+    myDiv.className = "myClass";
+    myDiv.id =Math.floor ( Math.random()*10+1);
+    myDiv.setAttribute ("title", "myTitle");
+    myDiv.style.backgroundColor = "green";
+    myDiv.style.padding = "12px";
+    myDiv.style.color = "yellow";
+
+    // myDiv.innerText = "Chai aur Code"; // this is not recommended, as it overrides the text
+
+    const myText = document.createTextNode ("Chair aur Code");
+    myDiv.appendChild (myText); // this is recommended, as it don't override anything, it just write the text
+
+    document.body.appendChild (myDiv);
+</script>
+
 </html>
