@@ -18,7 +18,7 @@
 <script>
     function addLang (langName) {
         const li = document.createElement('li');
-        li.innerText = langName; // this will traverse whole document
+        li.innerText = langName; 
         document.querySelector('.language').appendChild(li);
     } 
     addLang('Python');
@@ -28,20 +28,20 @@
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName));
         document.querySelector('.language').appendChild(li);
-    } // this will not traverse whole document
+    } 
     addLang2 ("C++");
 
-    // edit
+    
     const selectingLang = document.querySelector("li:nth-child(2)");
     selectingLang.innerText = "Java";
 
-    // edit
+    
     const temp = document.querySelector('li:first-child');
     temp.outerHTML = <li> Rubby </li>;
 
-    // remove
+    
     const lastLang = document.querySelector('li:last-child');
-    lastLang.remove();
+    lastLang.remove(); 
 </script>
 
 </html>
