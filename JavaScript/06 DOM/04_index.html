@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    
+    <ul class="language">
+        <li>
+            JavaScript
+        </li>
+    </ul>
+
+</body>
+
+<script>
+    function addLang (langName) {
+        const li = document.createElement('li');
+        li.innerText = langName; // this will traverse whole document
+        document.querySelector('.language').appendChild(li);
+    } 
+    addLang('Python');
+    addLang('TypeScript');
+
+    function addLang2 (langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    } // this will not traverse whole document
+    addLang2 ("C++");
+
+    const selectingLang = document.querySelector("li:nth-child(2)");
+    selectingLang.innerText = "Java";
+</script>
+
+</html>
