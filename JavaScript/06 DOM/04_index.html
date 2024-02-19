@@ -31,8 +31,17 @@
     } // this will not traverse whole document
     addLang2 ("C++");
 
+    // edit
     const selectingLang = document.querySelector("li:nth-child(2)");
     selectingLang.innerText = "Java";
+
+    // edit
+    const temp = document.querySelector('li:first-child');
+    temp.outerHTML = <li> Rubby </li>;
+
+    // remove
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
 </script>
 
 </html>
