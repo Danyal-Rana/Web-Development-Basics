@@ -1,0 +1,1 @@
+const myButtons = document.querySelectorAll(".button");
