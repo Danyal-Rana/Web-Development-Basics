@@ -2,12 +2,12 @@ const myButtons = document.querySelectorAll(".button");
 const documentBody = document.querySelector("body");
 
 myButtons.forEach (function (iButton) {
-    iButton.addEventListener('click', function (iEvent) {
+    iButton.addEventListener('mouseover', function (iEvent) {
         
         if (iEvent.target.id === 'grey') {
             documentBody.style.backgroundColor = iEvent.target.id;
         }
-        else if (iEvent.target.id === 'white') {
+        else if (iEvent.target.id === 'purple') {
             documentBody.style.backgroundColor = iEvent.target.id;
         }
         else if (iEvent.target.id === 'blue') {
@@ -16,5 +16,6 @@ myButtons.forEach (function (iButton) {
         else if (iEvent.target.id === 'yellow') {
             documentBody.style.backgroundColor = iEvent.target.id;
         }
+
     } )
 })
