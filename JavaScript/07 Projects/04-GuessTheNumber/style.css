@@ -51,6 +51,7 @@ button {
     border: 5px solid #6c6d6d;
     text-align: center;
     margin-top: 25px;
+    color: #fff;
 }
 
 #guess {
@@ -67,8 +68,8 @@ button {
 .wrapper {
     box-sizing: border-box;
     text-align: center;
-    width: 450px;
-    height: 550px;
+    width: 500px;
+    height: 600px;
     background-color: #474747;
     color: #fff;
     font-size: 25px;
