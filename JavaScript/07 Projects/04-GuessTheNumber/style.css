@@ -72,6 +72,7 @@ button {
     background-color: #474747;
     color: #fff;
     font-size: 25px;
+    border: 5px solid yellow;
 }
 
 h1 {
