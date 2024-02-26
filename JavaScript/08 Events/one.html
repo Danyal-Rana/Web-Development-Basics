@@ -21,4 +21,20 @@
     </div>
     
 </body>
+<script>
+    /*
+    document.getElementById("owl").onclick = function () {
+        alert("owl clicked");
+    }
+
+    // this is not the best approach
+    */
+
+    // attachEvent(), it was used in the era of Internet explorer
+    // jQuery, has 'on' similar to addEventListener
+
+    document.getElementById("owl").addEventListener("click", function(e){
+        console.log (e);
+    } ,false)
+</script>
 </html>
