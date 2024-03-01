@@ -22,35 +22,16 @@
     
 </body>
 <script>
-    /*
-    document.getElementById("owl").onclick = function () {
-        alert("owl clicked");
-    }
+    document.querySelector("#images").addEventListener ("click", function(e){
+        console.log (e.target.parentNode);
+        console.log (e.target.tagName);
 
-    // this is not the best approach
-    */
-
-    // attachEvent(), it was used in the era of Internet explorer
-    // jQuery, has 'on' similar to addEventListener
-
-    document.getElementById("images").addEventListener("click", function(e){
-        alert ("ul is clicked");
-    } ,false)
-
-    document.getElementById("owl").addEventListener("click", function(e){
-        alert ("owl is clicked");
-        e.stopPropagation(); // if we enable this than bubble will not go up
-    } ,false)
-
-    // false is related to event bubbling. when it is turned 'false', first 'owl is clicked' is shown than 'ul is clicked' will be printed and vice verse if we turn it 'true'
-    // to prevent eventPropagation, we use stopPropagation function
-
-
-    document.getElementById('google').addEventListener ("click", function(e){
-        e.stopPropagation();
-        e.preventDefault();
-        console.log ("Google is clicked");
+        if (e.target.tagName === 'IMG') { // to remove 
+            let myRemover = e.target.parentNode;
+            // myRemover.remove(); // this is new way 
+            myRemover.parentNode.removeChild(myRemover);
+        }
+        
     }, false)
-    
 </script>
 </html>
