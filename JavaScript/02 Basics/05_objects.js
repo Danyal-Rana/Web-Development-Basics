@@ -12,4 +12,5 @@ const {instructor} = course;
 console.log(instructor);
 
 const {instructor: iName} = course;
+console.log(course)
 console.log(iName);
