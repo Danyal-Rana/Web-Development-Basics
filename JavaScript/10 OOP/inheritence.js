@@ -18,3 +18,4 @@ class Student extends User {
 
 const s = new Student ("Danyal", 12, "admin@mdrana.com");
 console.log (s);
+console.log (s instanceof Student);
