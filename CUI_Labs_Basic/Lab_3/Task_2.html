@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Task_2.css"> -->
+    <title>Job Application Form - COMSATS University Islamabad</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <img src="" alt="">
+            <h2>Non-Faculty Job Application Form</h2>
+            <h3>COMSATS University Islamabad (CUI)</h3>
+            <div class="photo-box">
+                <p>Affix a recent photograph<br>3cm x 5cm</p>
+            </div>
+        </div>
+
+        <form action="/submit" method="post">
+            <table>
+                <tr>
+                    <td colspan="2"><b>1. Post applied for</b><br><input type="text" name="post"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>2. Department</b><br><input type="text" name="department"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>3. Campus</b><br>
+                        <input type="checkbox" name="campus" value="Lahore">Lahore
+                        <input type="checkbox" name="campus" value="Attock">Attock
+                        <input type="checkbox" name="campus" value="Islamabad">Islamabad
+                        <input type="checkbox" name="campus" value="Wah">Wah
+                        <input type="checkbox" name="campus" value="Sahiwal">Sahiwal
+                        <input type="checkbox" name="campus" value="Vehari">Vehari
+                        <input type="checkbox" name="campus" value="Abbottabad">Abbottabad
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>4. Name in full (use CAPITAL LETTERS)</b><br><input type="text" name="fullname">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>5. Father Name</b><br><input type="text" name="fathername"></td>
+                    <td><b>7. Date of Birth (DD/MM/YY)</b><br><input type="text" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><b>6. N.I.C #</b><br><input type="text" name="nic"></td>
+                    <td><b>9. Gender</b><br>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>8. E-Mail</b><br><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>10. Correspondence Postal Address</b><br><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><b>11. Telephone No. (Off)</b><br><input type="tel" name="telephone_off"></td>
+                    <td><b>Telephone No. (Res)</b><br><input type="tel" name="telephone_res"></td>
+                </tr>
+                <tr>
+                    <td><b>Mobile</b><br><input type="tel" name="mobile"></td>
+                    <td><b>City</b><br><input type="text" name="city"></td>
+                </tr>
+            </table>
+
+            <h3>12. Academic Record (Start from highest qualification and go down in descending order)</h3>
+            <table>
+                <tr>
+                    <th>Degree Held</th>
+                    <th>Year of Award</th>
+                    <th>Field</th>
+                    <th>Board/University</th>
+                    <th>Grade/Div</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="degree1"></td>
+                    <td><input type="text" name="year1"></td>
+                    <td><input type="text" name="field1"></td>
+                    <td><input type="text" name="board1"></td>
+                    <td><input type="text" name="grade1"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="degree2"></td>
+                    <td><input type="text" name="year2"></td>
+                    <td><input type="text" name="field2"></td>
+                    <td><input type="text" name="board2"></td>
+                    <td><input type="text" name="grade2"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+
+            <h3>13. Employment History (Start from most recent job and go down in descending order)</h3>
+            <table>
+                <tr>
+                    <th>Name of Organization</th>
+                    <th>Post Held with Pay Scale</th>
+                    <th>Job Profile</th>
+                    <th>Period (From - To)</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="organization1"></td>
+                    <td><input type="text" name="post1"></td>
+                    <td><input type="text" name="profile1"></td>
+                    <td><input type="text" name="period1"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="organization2"></td>
+                    <td><input type="text" name="post2"></td>
+                    <td><input type="text" name="profile2"></td>
+                    <td><input type="text" name="period2"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+
+            <p>
+                <b>Dated:</b> <input type="text" name="dated" style="width: 200px;">
+                <b>Signature:</b> <input type="text" name="signature" style="width: 200px;">
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
