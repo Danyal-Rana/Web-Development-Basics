@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <div id="center">
+        <form action="">
+            <fieldset>
+                <legend><b>Forms</b></legend>
+                <label for="fName">First Name:</label>
+                <input type="text" name="firstName" id="fName">
+                <br>
+                <br>
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lastName" id="lName">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone">
+                <br>
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" maxlength="8" placeholder="8 Chars only">
+                <br>
+                <br>
+                <label for="cPassword">Confirm Password:</label>
+                <input type="password" name="cPassword" id="cPassword" maxlength="8" placeholder="Retype Password">
+                <br>
+                <br>
+                <label for="fvrtColor">Select your favorite color:</label>
+                <select name="colors" id="fvrtColor">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black">Black</option>
+                </select>
+                <br>
+                <br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="others" value="others">
+                <label for="others">Others</label>
+                <br>
+                <br>
+                <label for="cv">Upload the CV:</label>
+                <input type="file" name="cv" id="cv">
+                <br>
+                <br>
+                <label for="myComment">Add a comment:</label>
+                <textarea name="comment" id="myComment"></textarea>
+                <br>
+                <br>
+                <input type="checkbox" name="checkBox" id="check" value="read">
+                <label for="check">I have read the Terms and Conditions.</label>
+                <br>
+                <br>
+                <button type="button" onclick="alert('Form submitted.')">Submitt</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
