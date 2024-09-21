@@ -45,4 +45,11 @@ html, body {
     height: 40px;
     background-color: transparent;
     color: #fff;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#center button:hover {
+    background-color: #fff;
+    color: #000;
 }
