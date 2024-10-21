@@ -37,7 +37,7 @@ body {
     background-color: #ffc107;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .container {
         flex-direction: column;
     }
@@ -49,8 +49,9 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 577px) and (max-width: 992px) {
     .container {
+        flex-wrap: wrap;
         flex-direction: row;
     }
 
@@ -68,6 +69,10 @@ body {
 }
 
 @media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+    
     .col-1 {
         width: 50%;
     }
