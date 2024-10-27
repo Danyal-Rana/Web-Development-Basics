@@ -8,6 +8,14 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
 .box {
     width: 100px;
     height: 100px;
@@ -16,7 +24,7 @@ body {
     align-items: center;
     font-size: 40px;
     border-top: 1px solid #687291;
-    margin: 20px 0;
+    margin: 5px 0;
     text-align: center;
 }
 
