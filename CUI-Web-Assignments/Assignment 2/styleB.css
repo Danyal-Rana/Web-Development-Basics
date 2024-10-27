@@ -18,14 +18,12 @@ body {
     height: 150px;
     background-color: #eeeff2;
     border-left: 10px dotted #D0D0FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 40px;
-    text-align: center;
     padding-left: 10px;
+    padding-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
 }
 
 .box:hover {
@@ -33,9 +31,18 @@ body {
     color: goldenrod;
 }
 
-.box:last-child {
+.fixed-box {
+    width: 100px;
+    height: 150px;
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 0;
 }
