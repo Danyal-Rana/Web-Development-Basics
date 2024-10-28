@@ -17,6 +17,7 @@
         var myVar;
 
         function start() {
+            myVar = setInterval(msgFunc, 3000);
             let countdown = 3;
             const button = document.getElementById("myButton");
             button.disabled = true;
@@ -30,7 +31,6 @@
                     button.disabled = false;
                 }
             }, 1000);
-            myVar = setInterval(msgFunc, 3000);
         };
 
         function stop() {

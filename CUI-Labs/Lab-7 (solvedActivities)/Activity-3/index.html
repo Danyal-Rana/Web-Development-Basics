@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+</head>
+<body>
+    <p>This clock is started by a script on this page.</p>
+    <p id="id"></p>
+    <button onclick="myStopFunction">Stop Time</button>
+
+    <script>
+        var myVar = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("id").innerHTML = t;
+        }
+
+        function myStopFunction() {
+            clearInterval(myVar);
+        }
+    </script>
+</body>
+</html>
