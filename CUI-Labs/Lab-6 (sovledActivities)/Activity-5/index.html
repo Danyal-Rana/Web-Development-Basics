@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5</title>
+    <script language="javascript">
+        function playGame() {
+            var res = Math.round(Math.random() * 10);
+            var num = prompt("Enter a number", 0);
+            if (num == res)
+                document.write("You Won")
+            else
+                document.write("Your loss, correct Answer is", res)
+        }
+    </script>
+</head>
+
+<body>
+    <p onClick="playGame()">Click to play the Game</p>
+</body>
+
+</html>
