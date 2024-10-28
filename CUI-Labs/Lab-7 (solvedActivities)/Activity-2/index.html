@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 4</title>
+</head>
+
+<body>
+    <p>Click the button to wait for 3 seconds, then Msg will be displayed!</p>
+    <p id="demo"></p>
+    <button id="myButton" onclick="start()" >Start</button>
+    <button onclick="stop()" >Stop</button>
+
+    <script>
+        var myVar;
+
+        function start() {
+            let countdown = 3;
+            const button = document.getElementById("myButton");
+            button.disabled = true;
+
+            const interval = setInterval (()=>{
+                button.innerHTML = `Stop now, else Message will be displayed after ${countdown-1} seconds.`;
+                countdown--;
+                if (countdown < 0) {
+                    clearInterval(interval);
+                    button.innerHTML = "Stop";
+                    button.disabled = false;
+                }
+            }, 1000);
+            myVar = setInterval(msgFunc, 3000);
+        };
+
+        function stop() {
+            clearInterval(myVar);
+        };
+
+        function msgFunc() {
+            document.getElementById("demo").innerHTML = "This text is displayed after 3 seconds of clicking.";
+        };
+    </script>
+</body>
+
+</html>
