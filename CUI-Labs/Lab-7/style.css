@@ -13,7 +13,22 @@ html, body {
 
 h1 {
     text-align: center;
-    color: ;
+    color: black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+    left: 0;
 }
 
 button {

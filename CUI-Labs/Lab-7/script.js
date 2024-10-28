@@ -1,7 +1,11 @@
 let wishlist = [];
 
 function addToWishlist(id, name) {
-    wishlist.push({ id, name });
+    const itemExists = wishlist.some(item => item.id === id);
+    
+    if (!itemExists) {
+        wishlist.push({ id, name });
+    }
     displayWishlist();
 }
 
