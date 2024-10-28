@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity-1</title>
+</head>
+<body>
+    <h3>A demonstration of how to access a number fiedl.</h3>
+
+    <input type="number" id="myNum" value="2">
+
+    <p>Click the button to get the number of the input field.</p>
+
+    <button onclick="myFunc()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunc() {
+            var x = document.getElementById("myNum").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
