@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="p-6 bg-blue-600 text-white">
+        <nav class="flex justify-center space-x-20 text-lg">
+            <a href="#" class="hover:text-gray-200">Home</a>
+            <a href="#" class="hover:text-gray-200">About</a>
+            <a href="#" class="hover:text-gray-200">Services</a>
+            <a href="https://mdrana.com" target="_blank" class="hover:text-gray-200">Contact</a>
+            <button
+                class="px-6 bg-yellow-500 text-blue-900 font-semibold rounded-lg hover:bg-yellow-400 hover:text-blue-700 transition duration-200">
+                <a href="#">Button</a>
+            </button>
+        </nav>
+    </header>
+
+    <main class="p-6 space-y-6">
+        <!-- Div1 Section with Image Box and Boxes -->
+        <section class="flex flex-col lg:flex-row lg:space-x-6 items-center">
+
+            <div class="w-full lg:w-1/3 bg-gray-300 h-48 flex items-center justify-center mb-6 lg:mb-0">
+                <span class="text-gray-600 text-xl">Image Box</span>
+            </div>
+
+            <div class="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 1</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 2</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 3</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 4</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 5</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 6</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 7</div>
+                <div class="h-24 bg-blue-200 flex items-center justify-center">Box 8</div>
+            </div>
+        </section>
+
+        <section class="p-6 bg-white shadow-md rounded-lg text-center">
+            <h2 class="text-xl font-semibold mb-2">Responsive Design Example</h2>
+            <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi in illo quos
+                expedita laboriosam nostrum sit ratione, dolorum suscipit quaerat. Maxime saepe aspernatur ipsa ratione
+                et libero sit suscipit natus doloribus, maiores qui sed recusandae officiis pariatur aliquid expedita
+                accusantium velit fugiat quisquam totam quod placeat eaque. Itaque, quo ea?</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-gray-200 text-center">
+        <p class="text-gray-700">© FA22-BCS-057. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
