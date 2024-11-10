@@ -2,9 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Gilroy";
 }
 html, body {
     height: 100%;
     width: 100%;
 }
 
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #82616d;
+}
+
+.left {
+    position: relative;
+    width: 46%;
+    height: 100%;
+}
+
+#nav {
+    width: 100%;
+    padding: 50px 60px;
+    gap: 100px;
+    display: flex;
+    color: #fff;
+}
+
+#nav {
+    text-decoration: none;
+    color: #fff;
+}
+
+#centerimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1668485967900-8ae371817f24?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.center {
+    width: 45%;
+    height: 100%;
+    background-color: green;
+}
+
+.right {
+    width: 10%;
+    height: 100%;
+    background-color: yellow;
+}
