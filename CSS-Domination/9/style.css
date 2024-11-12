@@ -112,6 +112,7 @@ html, body {
 }
     
 .center {
+    position: relative;
     width: 45%;
     height: 100%;
     background-image: url(https://images.unsplash.com/photo-1571513721963-d855fd8df4c2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -119,8 +120,36 @@ html, body {
     /* background-position: center; */
 }
 
+.cbox {
+    width: 250px;
+    height: 150px;
+    /* background-color: red; */
+    position: absolute;
+    right: -7%;
+    bottom: 7%;
+    display: flex;
+}
+
+#cicons {
+    background-color: #fff;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cimg {
+    width: 85%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1540429071038-04d88623bc9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
 .right {
     width: 10%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
