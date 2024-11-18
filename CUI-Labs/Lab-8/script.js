@@ -52,11 +52,10 @@ function validateForm() {
         dobError.textContent = 'Future dates are not allowed';
         isValid = false;
     } else {
-        dobError.textContent = '';
+        dobError.textContent = 'Unknown Error';
     }
 
     if (isValid) {
-        alert('Form submitted successfully!');
-        // You can add code here to submit the form data
+        alert('Form has been submitted successfully!');
     }
 }
