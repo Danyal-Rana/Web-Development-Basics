@@ -4,7 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from "./components/Todo";
 
+
 function App(props) {
+  const taskList = props.tasks?.map((task) => (
+    <Todo id={task.id} name={task.name} completed={task.completed} />
+  ));
+  
+
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
@@ -47,11 +53,9 @@ function App(props) {
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
-        <Todo name="Sleep" id="todo-0"/>
-        <Todo name="Eat" id="todo-1"/>
-        <Todo name="Code" id="todo-2" completed/>
-        <Todo name="Repeat" id="todo-3"/>
+        {taskList}
       </ul>
+
 
     </div>
   );
