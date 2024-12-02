@@ -6,8 +6,8 @@ import App from './App.jsx'
 const DATA = [
   { id: "todo-0", name: "Eat", completed: false },
   { id: "todo-1", name: "Sleep", completed: false },
-  { id: "todo-1", name: "Code", completed: true },
-  { id: "todo-2", name: "Repeat", completed: false },
+  { id: "todo-2", name: "Code", completed: true },
+  { id: "todo-3", name: "Repeat", completed: false },
 ];
 
 
