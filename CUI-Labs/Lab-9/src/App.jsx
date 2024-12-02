@@ -11,14 +11,12 @@ function App(props) {
       key={task.id}
     />
   ));
-  
+
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
       <Form />
       <div className="filters btn-group stack-exception">
-        <FilterButton />
-        <FilterButton />
         <FilterButton />
       </div>
       <h2 id="list-heading">3 tasks remaining</h2>
