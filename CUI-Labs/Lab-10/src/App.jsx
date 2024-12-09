@@ -26,6 +26,10 @@ function App(props) {
       key={task.id}
     />
   ));
+
+  const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
+  const headingText = `${taskList.length} ${tasksNoun} remaining`;
+  
   
 
   return (
@@ -35,7 +39,7 @@ function App(props) {
       <div className="filters btn-group stack-exception">
         <FilterButton />
       </div>
-      <h2 id="list-heading">4 tasks remaining</h2>
+      <h2 id="list-heading">{headingText}</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
