@@ -1,8 +1,17 @@
+import { useState } from "react";
+
 function Form(props) {
+
+    const [name, setName] = useState("");
+
+    function handleChange(event) {
+        setName(event.target.value);
+    }
 
     function handleSubmit(event) {
         event.preventDefault();
-        props.onSubmit("Hello callBack Prop")
+        props.addTask(name);
+        setName("");
     }
 
     return (
@@ -18,6 +27,8 @@ function Form(props) {
                 className="input input__lg"
                 name="text"
                 autoComplete="off"
+                value={name}
+                onChange={handleChange}
             />
             <button type="submit" className="btn btn__primary btn__lg">
                 Add
