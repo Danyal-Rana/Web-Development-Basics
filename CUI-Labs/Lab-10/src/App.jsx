@@ -8,15 +8,6 @@ function App(props) {
 
   const [tasks, setTasks] = useState(props.tasks);
 
-  const taskList = props.tasks?.map((task) => (
-    <Todo
-      id={task.id}
-      name={task.name}
-      completed={task.completed}
-      key={task.id}
-    />
-  ));
-
   function addTask(name) {
     const newTask = {
       id: `todo-${nanoid()}`,
@@ -26,6 +17,16 @@ function App(props) {
 
     setTasks([...tasks, newTask]);
   }
+
+  const taskList = tasks?.map((task) => (
+    <Todo
+      id={task.id}
+      name={task.name}
+      completed={task.completed}
+      key={task.id}
+    />
+  ));
+  
 
   return (
     <div className="todoapp stack-large">
