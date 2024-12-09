@@ -2,7 +2,7 @@ function Form(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        props.addTask("Hello callBack Prop")
+        props.onSubmit("Hello callBack Prop")
     }
 
     return (
